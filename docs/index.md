@@ -1,16 +1,16 @@
 # Clang IR (CIR)
 
 CIR is a new IR for Clang. The [LLVM's discourse RFC](WIP) goes in depth about
-this project motivation's, status and design choices.
+this project motivations, status and design choices.
 
 The source of truth for CIR is found at
 [https://github.com/facebookincubator/clangir](https://github.com/facebookincubator/clangir).
 
-This repo contains a stack of commits rebased on top of LLVM upstream - see
-[latest-upstream-llvm
-branch](https://github.com/facebookincubator/clangir/tree/latest-upstream-llvm)
-for the exact starting point. The 'main' branch is occasionally updated on top
-of LLVM upstream.
+The [main](https://github.com/facebookincubator/clangir/tree/main) branch
+contains a stack of commits, occasionally rebased on top of LLVM upstream,
+tracked in
+[latest-upstream-llvm](https://github.com/facebookincubator/clangir/tree/latest-upstream-llvm)
+branch.
 
 ## How to get ClangIR
 

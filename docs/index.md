@@ -12,6 +12,9 @@ tracked in
 [latest-upstream-llvm](https://github.com/facebookincubator/clangir/tree/latest-upstream-llvm)
 branch.
 
+* toc
+{:toc}
+
 ## How to get ClangIR
 
 ### Clone
@@ -95,3 +98,7 @@ $ ./bin/llvm-lit -a ../clang/test/CIR
 ## How to contribute
 
 Any change to the project should be done over github pull requests, anyone is welcome to contribute!
+
+## Documentation
+
+TBD

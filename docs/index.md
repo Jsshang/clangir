@@ -60,6 +60,13 @@ $ /Applications/CMake.app/Contents/bin/cmake -GNinja \
  -DLLVM_ENABLE_PROJECTS="clang;mlir" \
  -DCMAKE_CXX_COMPILER=${CLANG}++ \
  -DCMAKE_C_COMPILER=${CLANG} ../
+$ ninja install
+```
+
+You can test a successful install by checking `cir-tool`:
+
+```
+$ /tmp/install-llvm/bin/cir-tool --help
 ```
 
 ## How to run tests

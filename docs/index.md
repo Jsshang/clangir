@@ -1,7 +1,5 @@
-# Clang IR (CIR)
-
-CIR is a new IR for Clang. The [LLVM's discourse RFC](WIP) goes in depth about
-this project motivations, status and design choices.
+Clang IR (CIR) is a new IR for Clang. The [LLVM's discourse RFC](WIP) goes in depth about
+the project motivation, status and design choices.
 
 The source of truth for CIR is found at
 [https://github.com/facebookincubator/clangir](https://github.com/facebookincubator/clangir).
@@ -15,15 +13,17 @@ branch.
 * toc
 {:toc}
 
-## How to get ClangIR
+---
 
-### Clone
+# Getting started
+
+## Git repo
 
 ```
 $ git clone https://github.com/facebookincubator/clangir.git llvm-project
 ```
 
-### Adding as remote
+## Remote
 
 Alternatively, one can just add remotes:
 
@@ -33,7 +33,7 @@ $ git remote add fbi git@github.com:facebookincubator/clangir.git
 $ git checkout -b clangir fbi/main
 ```
 
-## How to build
+# Building
 
 In order to enable CIR related functionality, just add `mlir`
 and `clang` to the CMake list of *enabled projects* and do a regular
@@ -72,7 +72,7 @@ You can test a successful install by checking `cir-tool`:
 $ /tmp/install-llvm/bin/cir-tool --help
 ```
 
-## How to run tests
+## Running tests
 
 Test are an important part on preventing regressions and covering functionality
 on new features. There are multiple ways to run CIR tests.
@@ -95,10 +95,14 @@ $ cd build
 $ ./bin/llvm-lit -a ../clang/test/CIR
 ```
 
-## How to contribute
+---
+
+# How to contribute
 
 Any change to the project should be done over github pull requests, anyone is welcome to contribute!
 
-## Documentation
+---
+
+# Documentation
 
 TBD

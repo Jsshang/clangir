@@ -49,7 +49,7 @@ See the [steps
 here](https://llvm.org/docs/GettingStarted.html#local-llvm-configuration) for
 general instruction on how to build LLVM.
 
-For example, building CIR+Clang on macOS could look like:
+For example, building and installing CIR enabled clang on macOS could look like:
 
 ```
 CLANG=`xcrun -f clang`
@@ -68,7 +68,7 @@ $ /Applications/CMake.app/Contents/bin/cmake -GNinja \
 $ ninja install
 ```
 
-You can test a successful install by checking `cir-tool`:
+Check for `cir-tool` to confirm all is fine:
 
 ```
 $ /tmp/install-llvm/bin/cir-tool --help
@@ -76,8 +76,8 @@ $ /tmp/install-llvm/bin/cir-tool --help
 
 ## Running tests
 
-Test are an important part on preventing regressions and covering functionality
-on new features. There are multiple ways to run CIR tests.
+Test are an important part on preventing regressions and covering new feature
+functionality. There are multiple ways to run CIR tests.
 
 The more aggresive (slower) one:
 ```

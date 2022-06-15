@@ -1,3 +1,5 @@
+# Clang IR (CIR)
+
 Clang IR (CIR) is a new IR for Clang. The [LLVM's discourse RFC](WIP) goes in depth about
 the project motivation, status and design choices.
 

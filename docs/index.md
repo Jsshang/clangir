@@ -44,10 +44,22 @@ See the [steps
 here](https://llvm.org/docs/GettingStarted.html#local-llvm-configuration) for
 general instruction on how to build LLVM.
 
-For example, building CIR on macOS could look like:
+For example, building CIR+Clang on macOS could look like:
 
 ```
-TBD
+CLANG=`xcrun -f clang`
+INSTALLDIR=/tmp/install-llvm
+
+$ cd llvm-project/llvm
+$ mkdir build-release; cd build-release
+$ /Applications/CMake.app/Contents/bin/cmake -GNinja \
+ -DCMAKE_BUILD_TYPE=Release \
+ -DCMAKE_INSTALL_PREFIX=${INSTALLDIR} \
+ -DLLVM_ENABLE_ASSERTIONS=ON \
+ -DLLVM_TARGETS_TO_BUILD="X86" \
+ -DLLVM_ENABLE_PROJECTS="clang;mlir" \
+ -DCMAKE_CXX_COMPILER=${CLANG}++ \
+ -DCMAKE_C_COMPILER=${CLANG} ../
 ```
 
 ## How to run tests
